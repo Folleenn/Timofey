@@ -1,395 +1,559 @@
-'''#Begin1
-a = float(input('Сторона квадрата: '))
-P = 4 * a
-print('Периметр = ', P)'''
+# For10
 
-'''#Begin2
-a = float(input('Сторона квадрата: '))
-S = a ** 2
-print('Площадь = ', S)'''
+N = int(input("Введите N: "))
+S = 0
+for i in range(1, N + 1):
+    S += 1 / i
+print(S)
 
-'''#Begin3
-a = float(input())
-b = float(input())
-S = a * b
-P = 2 * (a+b)
-print(f'Площадь = ', {S}, 'Периметр = ', {P})'''
+# For11
 
-'''#Begin4
-d = float(input())
-pi = 3.14
-L = pi * d
-print('Длина = ', L)'''
+N = int(input("Введите N: "))
+S = 0
+for i in range(N, 2 * N + 1):
+    S += i ** 2
+print(S)
 
-'''#Begin5
-a = float(input())
-V = a ** 3
-S = 6 * (a ** 2)
-print(f'Объём = ', V, 'площадь = ',)'''
+# For12
 
-'''#Begin6
-a = int(input("Введите сторону а: "))
-b = int(input("Введите сторону b: "))
-c = int(input("Введите сторону c: "))
-V = a * b * c
-S = 2 * (a * b + b * c + a * c)
-print(f"Обьем: {V}, Площадь: {S}")'''
+N = int(input("Введите N: "))
+P = 1
+for i in range(1, N + 1):
+    P *= 1 + i / 10
+print(P)
 
-'''#Beging7
-R = int(input("Введите радиус: "))
-L = 2 * 3.14 * R
-S = 3.14 * R**2
-print(f"Длина: {L}, Площадь: {S}")'''
+# For13
 
-'''#beginig8
-a = int(input("Введите число a: "))
-b = int(input("Введите число b: "))
-ab = (a + b)/2'''
+N = int(input("Введите N: "))
+S = 0
+for i in range(1, N + 1):
+    S += (-1) ** (i + 1) * (1 + i / 10)
+print(S)
 
-'''#beginig9
-a = float(input("Введите неотрицательное число a: "))
-b = float(input("Введите неотрицательное число b: "))
-a >= 0 and b >= 0
-ab = (a * b) ** 0.5'''
+# For14
 
-'''#Begin10
-a = float(input())
-b = float(input())
-a != 0 and b != 0
-c = a ** 2 + b ** 2
-d = a ** 2 - b ** 2
-e = (a ** 2) * (b ** 2)
-f = (a ** 2) / (b ** 2)
-print(f'Сумма квадратов = ', c, 'разность квадратов = ', d, 'произведение квадратов = ', e, 'частное квадратов = ', f,)'''
+N = int(input("Введите N: "))
+S = 0
+for i in range(1, N + 1):
+    S += 2 * i - 1
+    print(S)
 
-'''#Begin11
-a = float(input())
-b = float(input())
-a != 0 and b != 0
-c = a ** 2 + b ** 2
-d = a ** 2 - b ** 2
-e = (a ** 2) * (b ** 2)
-f = ((a ** 2) ** 0.5) / ((b ** 2) ** 0.5)
-print(f'Сумма квадратов = ', c, 'разность квадратов = ', d, 'произведение квадратов = ', e, 'частное модулей = ', f,)'''
+# For15
 
-'''#Begin12
-a = float(input('Первый катет: '))
-b = float(input('Второй катет: '))
-c = (a ** 2 + b ** 2) ** 0.5
-P = a + b + c
-print('Гипотенуза = ', c)
-print('Периметр = ', P)'''
-
-'''#Begin13
-R1 = float(input('Введите R1: ')) 
-R2 = float(input('Введите R2: '))
-
-S1 = 3.14 * R1 * R1
-S2 = 3.14 * R2 * R2
-S3 = S1 - S2
-
-print("Площадь первого круга:", S1)
-print("Площадь второго круга:", S2)
-print("Площадь кольца:", S3)'''
-
-'''#Begin14
-L = float(input("Введите длину окружности: "))
-
-R = L / (2 * 3.14)
-S = 3.14 * R * R
-
-print("Радиус:", R)
-print("Площадь:", S)'''
-
-'''#Begin15
-S = float(input("Введите площадь круга: "))
-
-R = (S / 3.14) ** 0.5
-D = 2 * R
-L = 2 * 3.14 * R
-
-print("Диаметр:", D)
-print("Длина окружности:", L)'''
-
-'''#Begin15
-x1 = float(input('Введите x1: ')) 
-x2 = float(input('Введите x2: '))
-print("Расстояние:", abs(x2 - x1))'''
-
-'''#Begin16
-A = float(input('Введите A: ')) 
-B = float(input('Введите B: '))
-C = float(input('Введите C: '))
-
-AC = abs(C - A)
-BC = abs(C - B)
-
-print("AC:", AC)
-print("BC:", BC)
-print("AC + BC:", AC + BC)'''
-
-'''#Begin17
-A = float(input('Введите A: ')) 
-B = float(input('Введите B: '))
-C = float(input('Введите C: '))
-
-AC = abs(C - A)
-BC = abs(B - C)
-
-print("Произведение AC * BC:", AC * BC)'''
-
-'''#Begin17
-x1 = float(input('Введите x1: ')) 
-y1 = float(input('Введите y2: '))
-x2 = float(input('Введите x1: ')) 
-y2 = float(input('Введите x2: '))
-
-distance = ((x2 - x1)  2 + (y2 - y1)  2) ** 0.5
-
-print("Расстояние:", distance)'''
-
-'''#Begin18
 A = float(input("Введите A: "))
-B = float(input("Введите B: "))
-C = float(input("Введите C: "))
+N = int(input("Введите N: "))
+P = 1
+for i in range(N):
+    P *= A
+print(P)
 
-AC = abs(C - A)
-BC = abs(B - C)
+# For16
 
-print("Произведение AC * BC:", AC * BC)'''
-
-'''#Begin19
-x1 = float(input("Введите x1: "))
-y1 = float(input("Введите y1: "))
-x2 = float(input("Введите x2: "))
-y2 = float(input("Введите y2: "))
-
-a = abs(x2 - x1)
-b = abs(y2 - y1)
-
-print("Периметр:", 2 * (a + b))
-print("Площадь:", a * b)'''
-
-'''#Begin20
-x1 = float(input("Введите x1: "))
-y1 = float(input("Введите y1: "))
-x2 = float(input("Введите x2: "))
-y2 = float(input("Введите y2: "))
-
-distance = ((x2 - x1)  2 + (y2 - y1)  2) ** 0.5
-
-print("Расстояние:", distance)'''
-
-'''#Begin21
-x1 = float(input("Введите x1: "))
-y1 = float(input("Введите y1: "))
-x2 = float(input("Введите x2: "))
-y2 = float(input("Введите y2: "))
-x3 = float(input("Введите x3: "))
-y3 = float(input("Введите y3: "))
-
-a = ((x2 - x1)  2 + (y2 - y1)  2) ** 0.5
-b = ((x3 - x2)  2 + (y3 - y2)  2) ** 0.5
-c = ((x1 - x3)  2 + (y1 - y3)  2) ** 0.5
-
-p = (a + b + c) / 2
-
-print("Периметр:", a + b + c)
-print("Площадь:", (p * (p - a) * (p - b) * (p - c)) ** 0.5)'''
-
-'''#Begin22
 A = float(input("Введите A: "))
-B = float(input("Введите B: "))
+N = int(input("Введите N: "))
+P = 1
+for i in range(1, N + 1):
+    P *= A
+    print(P)
 
-T = A
-A = B
-B = T
+# For17
 
-print("A =", A)
-print("B =", B)'''
-
-'''#Begin23
 A = float(input("Введите A: "))
-B = float(input("Введите B: "))
-C = float(input("Введите C: "))
+N = int(input("Введите N: "))
+S = 1
+P = 1
+for i in range(1, N + 1):
+    P *= A
+    S += P
+print(S)
 
-T = A
-A = C
-C = B
-B = T
+# For18
 
-print("A =", A)
-print("B =", B)
-print("C =", C)'''
-
-'''#Begin24
 A = float(input("Введите A: "))
-B = float(input("Введите B: "))
-C = float(input("Введите C: "))
+N = int(input("Введите N: "))
+S = 1
+P = 1
+for i in range(1, N + 1):
+    P *= -A
+    S += P
+print(S)
 
-T = A
-A = B
-B = C
-C = T
+# For19
 
-print("A =", A)
-print("B =", B)
-print("C =", C)'''
+N = int(input("Введите N: "))
+P = 1.0
+for i in range(1, N + 1):
+    P *= i
+print(P)
 
-'''#Begin25
-x = float(input("Введите x: "))
+# For20
 
-y = 3 * x  6 - 6 * x  2 - 7
+N = int(input("Введите N: "))
+F = 1.0
+S = 0.0
+for i in range(1, N + 1):
+    F *= i
+    S += F
+print(S)
 
-print("y =", y)'''
+# For21
 
-'''#Begin26
-x = float(input("Введите x: "))
+N = int(input("Введите N: "))
+F = 1.0
+S = 1.0
+for i in range(1, N + 1):
+    F *= i
+    S += 1 / F
+print(S)
 
-y = 4 * (x - 3)  6 - 7 * (x - 3)  3 + 2
+# For22
 
-print("y =", y)'''
-
-'''#Begin27
-A = float(input("Введите A: "))
-
-A2 = A * A
-A4 = A2 * A2
-A8 = A4 * A4
-
-print("A² =", A2)
-print("A⁴ =", A4)
-print("A⁸ =", A8)'''
-
-'''#Begin28
-A = float(input("Введите A: "))
-
-A2 = A * A
-A3 = A2 * A
-A5 = A3 * A2
-A10 = A5 * A5
-A15 = A10 * A5
-
-print("A² =", A2)
-print("A³ =", A3)
-print("A⁵ =", A5)
-print("A¹⁰ =", A10)
-print("A¹⁵ =", A15)'''
-
-'''#Begin29
-a = float(input("Введите угол в градусах: "))
-
-radians = a * 3.14 / 180
-
-print("Угол в радианах:", radians)'''
-
-'''#Begin30
-a = float(input("Введите угол в радианах: "))
-
-degrees = a * 180 / 3.14
-
-print("Угол в градусах:", degrees)'''
-
-'''#Begin31
-TF = float(input("Введите температуру в Фаренгейтах: "))
-
-TC = (TF - 32) * 5 / 9
-
-print("Температура в Цельсиях:", TC)'''
-
-'''#Begin32
-TC = float(input("Введите температуру в Цельсиях: "))
-
-TF = TC * 9 / 5 + 32
-
-print("Температура в Фаренгейтах:", TF)'''
-
-'''#Begin33
 X = float(input("Введите X: "))
-A = float(input("Введите A: "))
-Y = float(input("Введите Y: "))
+N = int(input("Введите N: "))
+F = 1.0
+P = 1.0
+S = 1.0
+for i in range(1, N + 1):
+    P *= X
+    F *= i
+    S += P / F
+print(S)
 
-price = A / X
+# For23
 
-print("Цена 1 кг:", price)
-print("Цена Y кг:", price * Y)'''
-
-'''#Begin34
 X = float(input("Введите X: "))
+N = int(input("Введите N: "))
+F = 1.0
+P = X
+S = X
+for i in range(1, N + 1):
+    F *= (2 * i) * (2 * i + 1)
+    P *= X * X
+    S += (-1) ** i * P / F
+print(S)
+
+# For24
+
+X = float(input("Введите X: "))
+N = int(input("Введите N: "))
+F = 1.0
+P = 1.0
+S = 1.0
+for i in range(1, N + 1):
+    F *= (2 * i - 1) * (2 * i)
+    P *= X * X
+    S += (-1) ** i * P / F
+print(S)
+
+# For25
+
+X = float(input("Введите X: "))
+N = int(input("Введите N: "))
+S = 0
+for i in range(1, N + 1):
+    S += (-1) ** (i + 1) * X ** i / i
+print(S)
+
+# For26
+
+X = float(input("Введите X: "))
+N = int(input("Введите N: "))
+S = 0
+for i in range(0, N + 1):
+    S += (-1) ** i * X ** (2 * i + 1) / (2 * i + 1)
+print(S)
+
+# For27
+
+X = float(input("Введите X: "))
+N = int(input("Введите N: "))
+S = X
+P = X
+for i in range(1, N + 1):
+    P *= X * X
+    for j in range(1, i + 1):
+        P *= (2 * j - 1) / (2 * j)
+    S += P / (2 * i + 1)
+print(S)
+
+# For28
+
+X = float(input("Введите X: "))
+N = int(input("Введите N: "))
+S = 1.0
+P = 1.0
+for i in range(1, N + 1):
+    P *= (2 * i - 3) * X / (2 * i)
+    S += (-1) ** (i + 1) * P
+print(S)
+
+# For29
+
 A = float(input("Введите A: "))
-Y = float(input("Введите Y: "))
 B = float(input("Введите B: "))
+N = int(input("Введите N: "))
+H = (B - A) / N
+print(H)
+for i in range(N + 1):
+    X = A + i * H
+    print(X)
+    
+# For30
 
-price1 = A / X
-price2 = B / Y
-
-print("Цена 1 кг шоколадных конфет:", price1)
-print("Цена 1 кг ирисок:", price2)
-print("Во сколько раз шоколадные конфеты дороже:", price1 / price2)'''
-
-'''#Begin35
-V = float(input("Введите V: "))
-U = float(input("Введите U: "))
-T1 = float(input("Введите T1: "))
-T2 = float(input("Введите T2: "))
-
-S = V * T1 + (V - U) * T2
-
-print("Пройденное расстояние:", S)'''
-
-'''#Begin36
-V1 = float(input("Введите V1: "))
-V2 = float(input("Введите V2: "))
-S = float(input("Введите S: "))
-T = float(input("Введите T: "))
-
-S = S + (V1 + V2) * T
-
-print("Расстояние между автомобилями:", S)'''
-
-'''#Begin37
-V1 = float(input("Введите V1: "))
-V2 = float(input("Введите V2: "))
-S = float(input("Введите S: "))
-T = float(input("Введите T: "))
-
-S = abs(S - (V1 + V2) * T)
-
-print("Расстояние между автомобилями:", S)'''
-
-'''#Begin38
 A = float(input("Введите A: "))
 B = float(input("Введите B: "))
+N = int(input("Введите N: "))
+H = (B - A) / N
+print(H)
+import math
+for i in range(N + 1):
+    X = A + i * H
+    F = 1 - math.sin(X)
+    print(F)
 
-x = -B / A
+# For31
 
-print("x =", x)'''
+N = int(input("Введите N: "))
+A = 2.0
+for i in range(1, N + 1):
+    A = 2 + 1 / A
+    print(A)
 
-'''#Begin39
+# For32
+
+N = int(input("Введите N: "))
+A = 1.0
+for i in range(1, N + 1):
+    A = (A + 1) / i
+    print(A)
+
+# For33
+
+N = int(input("Введите N: "))
+A = 1
+B = 1
+print(A)
+print(B)
+for i in range(3, N + 1):
+    C = A + B
+    print(C)
+    A = B
+    B = C
+
+# For34
+
+N = int(input("Введите N: "))
+A = 1.0
+B = 2.0
+print(A)
+print(B)
+for i in range(3, N + 1):
+    C = (A + 2 * B) / 3
+    print(C)
+    A = B
+    B = C
+
+# For35
+
+N = int(input("Введите N: "))
+A = 1
+B = 2
+C = 3
+print(A)
+print(B)
+print(C)
+for i in range(4, N + 1):
+    D = C + B - 2 * A
+    print(D)
+    A = B
+    B = C
+    C = D
+
+# For36
+
+N = int(input("Введите N: "))
+K = int(input("Введите K: "))
+S = 0.0
+for i in range(1, N + 1):
+    S += i ** K
+print(S)
+
+# For37
+
+N = int(input("Введите N: "))
+S = 0.0
+for i in range(1, N + 1):
+    S += i ** i
+print(S)
+
+# For38
+
+N = int(input("Введите N: "))
+S = 0.0
+for i in range(1, N + 1):
+    S += i ** (N - i + 1)
+print(S)
+
+# For39
+
+A = int(input("Введите A: "))
+B = int(input("Введите B: "))
+for i in range(A, B + 1):
+    for j in range(i):
+        print(i, end=" ")
+print()
+
+# For40
+
+A = int(input("Введите A: "))
+B = int(input("Введите B: "))
+K = 1
+for i in range(A, B + 1):
+    for j in range(K):
+        print(i, end=" ")
+    K += 1
+print()
+
+# While10
+
+N = int(input("Введите N: "))
+K = 0
+while 3 ** (K + 1) < N:
+    K += 1
+print(K)
+
+# While11
+
+N = int(input("Введите N: "))
+K = 0
+S = 0
+while S < N:
+    K += 1
+    S += K
+print(K)
+print(S)
+
+# While12
+
+N = int(input("Введите N: "))
+K = 0
+S = 0
+while S + K + 1 <= N:
+    K += 1
+    S += K
+print(K)
+print(S)
+
+# While13
+
+A = float(input("Введите A: "))
+K = 0
+S = 0
+while S <= A:
+    K += 1
+    S += 1 / K
+print(K)
+print(S)
+
+# While14
+
+A = float(input("Введите A: "))
+K = 0
+S = 0
+while S + 1 / (K + 1) < A:
+    K += 1
+    S += 1 / K
+print(K)
+print(S)
+
+# While15
+
+P = float(input("Введите P: "))
+S = 1000
+K = 0
+while S <= 1100:
+    S += S * P / 100
+    K += 1
+print(K)
+print(S)
+
+# While16
+
+P = float(input("Введите P: "))
+S = 10
+Day = 10
+K = 1
+while S <= 200:
+    Day += Day * P / 100
+    S += Day
+    K += 1
+print(K)
+print(S)
+
+# While17
+
+N = int(input("Введите N: "))
+while N > 0:
+    print(N % 10)
+    N //= 10
+
+# While18
+
+N = int(input("Введите N: "))
+Count = 0
+S = 0
+while N > 0:
+    S += N % 10
+    Count += 1
+    N //= 10
+print(Count)
+print(S)
+
+# While19
+
+N = int(input("Введите N: "))
+Reverse = 0
+while N > 0:
+    Reverse = Reverse * 10 + N % 10
+    N //= 10
+print(Reverse)
+
+# While20
+
+N = int(input("Введите N: "))
+Found = False
+while N > 0:
+    if N % 10 == 2:
+        Found = True
+    N //= 10
+print(Found)
+
+# While21
+
+N = int(input("Введите N: "))
+Found = False
+while N > 0:
+    if N % 10 % 2 != 0:
+        Found = True
+    N //= 10
+print(Found)
+
+# While22
+
+N = int(input("Введите N: "))
+K = 2
+Simple = True
+while K * K <= N:
+    if N % K == 0:
+        Simple = False
+    K += 1
+print(Simple)
+
+# While23
+
+A = int(input("Введите A: "))
+B = int(input("Введите B: "))
+while B != 0:
+    A, B = B, A % B
+print(A)
+
+# While24
+
+N = int(input("Введите N: "))
+A = 1
+B = 1
+Found = False
+while A <= N:
+    if A == N:
+        Found = True
+    C = A + B
+    A = B
+    B = C
+print(Found)
+
+# While25
+
+N = int(input("Введите N: "))
+A = 1
+B = 1
+while A <= N:
+    C = A + B
+    A = B
+    B = C
+print(A)
+
+# While26
+
+N = int(input("Введите N: "))
+A = 1
+B = 1
+while B != N:
+    C = A + B
+    A = B
+    B = C
+print(A)
+print(A + B)
+
+# While27
+
+N = int(input("Введите N: "))
+A = 1
+B = 1
+K = 2
+while B != N:
+    C = A + B
+    A = B
+    B = C
+    K += 1
+print(K)
+
+# While28
+
+E = float(input("Введите E: "))
+A1 = 2.0
+K = 1
+while True:
+    A2 = 2 + 1 / A1
+    K += 1
+    if abs(A2 - A1) < E:
+        break
+    A1 = A2
+print(K)
+print(A1)
+print(A2)
+
+# While29
+
+E = float(input("Введите E: "))
+A1 = 1.0
+A2 = 2.0
+K = 2
+while True:
+    A3 = (A1 + 2 * A2) / 3
+    K += 1
+    if abs(A3 - A2) < E:
+        break
+    A1 = A2
+    A2 = A3
+print(K)
+print(A2)
+print(A3)
+
+# While30
+
 A = float(input("Введите A: "))
 B = float(input("Введите B: "))
 C = float(input("Введите C: "))
-
-D = B * B - 4 * A * C
-
-x1 = (-B - D ** 0.5) / (2 * A)
-x2 = (-B + D ** 0.5) / (2 * A)
-
-print("Первый корень:", x1)
-print("Второй корень:", x2)'''
-
-'''#Begin40
-A1 = float(input("Введите A1: "))
-B1 = float(input("Введите B1: "))
-C1 = float(input("Введите C1: "))
-A2 = float(input("Введите A2: "))
-B2 = float(input("Введите B2: "))
-C2 = float(input("Введите C2: "))
-
-D = A1 * B2 - A2 * B1
-
-x = (C1 * B2 - C2 * B1) / D
-y = (A1 * C2 - A2 * C1) / D
-
-print("x =", x)
-print("y =", y)'''
+CountA = 0
+CountB = 0
+while A >= C:
+    A -= C
+    CountA += 1
+while B >= C:
+    B -= C
+    CountB += 1
+Count = 0
+while CountA > 0:
+    Count += CountB
+    CountA -= 1
+print(Count)
